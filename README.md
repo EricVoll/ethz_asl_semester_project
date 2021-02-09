@@ -8,3 +8,6 @@ My Semester Project at the ETHZ ASL institute
  - `cd ~ && mkdir -p catkin_ws/src && cd catkin_ws`
  - `catkin config --init --merge-devel --cmake-args -DCMAKE_BUILD_TYPE=Release`
  - `catkin config --extend /opt/ros/melodic`
+
+# Depenencies:
+- https://github.com/ethz-asl/rotors_simulator
