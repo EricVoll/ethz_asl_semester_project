@@ -60,12 +60,20 @@ namespace MrDrone.Core.Classes
 
         protected void DigestOdometryStateMessage(Odometry odom)
         {
-            this.State.Pose.Update(odom);
+            State.Pose.Update(odom);
+            State.PoseHasChanged = true;
         }
 
         protected void DigestImuStateMessage(Imu imu)
         {
-            this.State.Imu = imu;
+            State.Imu = imu;
+            State.ImuHasChanged = true;
+        }
+
+        protected void DigestJointStateMessage(JointState state)
+        {
+            State.JointSate = state;
+            State.JointStateHasChanged = true;
         }
     }
 }

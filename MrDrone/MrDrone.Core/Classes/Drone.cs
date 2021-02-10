@@ -38,8 +38,10 @@ namespace MrDrone.Core.Classes
             base.ConfigureStateSubscriber();
 
             Topics.AddSubscriber<Odometry>(nameof(DigestOdometryStateMessage), "ground_truth/odometry", RosSocket, DigestOdometryStateMessage);
-            Topics.AddSubscriber<Imu>(nameof(DigestOdometryStateMessage), "imu", RosSocket, DigestImuStateMessage);
+            Topics.AddSubscriber<Imu>(nameof(DigestImuStateMessage), "imu", RosSocket, DigestImuStateMessage);
+            Topics.AddSubscriber<JointState>(nameof(DigestJointStateMessage), "joint_states", RosSocket, DigestJointStateMessage);
         }
+
 
     }
 }

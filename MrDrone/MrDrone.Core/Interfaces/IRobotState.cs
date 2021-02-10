@@ -10,9 +10,19 @@ namespace MrDrone.Core.Interfaces
 {
     public interface IRobotState
     {
-        IPose Pose { get; set; }
-        Imu Imu { get; set; }
-        float BatteryLevel { get; set; }
         IPose CurrentTarget { get; set; }
+        float BatteryLevel { get; set; }
+
+        Imu Imu { get; set; }
+        JointState JointSate { get; set; }
+        IPose Pose { get; set; }
+
+        bool ImuHasChanged { get; set; }
+        bool JointStateHasChanged { get; set; }
+        bool PoseHasChanged { get; set; }
+
+        void ReportImuSynched();
+        void ReportJointStateSynched();
+        void ReportPoseSynched();
     }
 }

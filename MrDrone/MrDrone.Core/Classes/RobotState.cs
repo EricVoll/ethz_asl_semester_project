@@ -15,5 +15,25 @@ namespace MrDrone.Core.Classes
         public float BatteryLevel { get; set; }
         public IPose CurrentTarget { get; set; }
         public Imu Imu { get; set; }
+        public JointState JointSate { get; set; }
+
+        public bool ImuHasChanged { get; set; }
+        public bool JointStateHasChanged { get; set; }
+        public bool PoseHasChanged { get; set; }
+
+        public void ReportImuSynched()
+        {
+            ImuHasChanged = false;
+        }
+
+        public void ReportJointStateSynched()
+        {
+            JointStateHasChanged = false;
+        }
+
+        public void ReportPoseSynched()
+        {
+            PoseHasChanged = false;
+        }
     }
 }
