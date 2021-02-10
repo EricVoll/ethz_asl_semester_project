@@ -11,3 +11,11 @@ My Semester Project at the ETHZ ASL institute
 
 # Depenencies:
 - https://github.com/ethz-asl/rotors_simulator
+- https://github.com/EricVoll/ros-sharp
+
+# Importing the drone-model into Unity:
+Three things have to be done before you can import the robot model:
+- Install and roslaunch the file_server package contained in [ros-sharp](https://github.com/EricVoll/ros-sharp)
+- Roslaunch the rotors_description launch file you want to import to Unity. Make sure, that the launch file writes the robot's urdf into the "robot_description" paramter.
+- Install and roslaunch the ros-bridge
+- Pull the RosSharp folder into the Unity project, such that the "RosBridgeClient" menu item appears in the menu-bar. There you can enter the IP adress of the device running the ROS-master and click import.
