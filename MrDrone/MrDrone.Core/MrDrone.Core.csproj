@@ -65,4 +65,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)..\MrDrone.Unity\Assets\Plugins\MrDrone.Core\$(ProjectName).dll"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
