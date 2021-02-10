@@ -2,6 +2,8 @@
 using MrDrone.Core.Interfaces;
 using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.MessageTypes.Mav;
+using RosSharp.RosBridgeClient.MessageTypes.Nav;
+using RosSharp.RosBridgeClient.MessageTypes.Sensor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,12 +26,20 @@ namespace MrDrone.Core.Classes
 
         protected override void RegisterMainTopics()
         {
+            Topics = new TopicHandler("firefly");
+
             base.RegisterMainTopics();
 
-            Topics = new TopicHandler("firefly");
-            Topics.AddTopic<Actuators>(nameof(CommandActuator), "command/motor_speed", RosSocket);
+            Topics.AddPublisher<Actuators>(nameof(CommandActuator), "command/motor_speed", RosSocket);
         }
 
+        protected override void ConfigureStateSubscriber()
+        {
+            base.ConfigureStateSubscriber();
+
+            Topics.AddSubscriber<Odometry>(nameof(DigestOdometryStateMessage), "ground_truth/odometry", RosSocket, DigestOdometryStateMessage);
+            Topics.AddSubscriber<Imu>(nameof(DigestOdometryStateMessage), "imu", RosSocket, DigestImuStateMessage);
+        }
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MrDrone.Core.Basics;
 using MrDrone.Core.Interfaces;
+using RosSharp.RosBridgeClient.MessageTypes.Sensor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,6 @@ namespace MrDrone.Core.Classes
         public IPose Pose { get; set; }
         public float BatteryLevel { get; set; }
         public IPose CurrentTarget { get; set; }
+        public Imu Imu { get; set; }
     }
 }

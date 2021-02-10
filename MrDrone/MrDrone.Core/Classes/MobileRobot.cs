@@ -1,7 +1,10 @@
-﻿using MrDrone.Core.Interfaces;
+﻿using MrDrone.Core.Basics;
+using MrDrone.Core.Interfaces;
 using Newtonsoft.Json;
 using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.MessageTypes.Mav;
+using RosSharp.RosBridgeClient.MessageTypes.Nav;
+using RosSharp.RosBridgeClient.MessageTypes.Sensor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +29,7 @@ namespace MrDrone.Core.Classes
 
         protected virtual void RegisterMainTopics()
         {
-
+            ConfigureStateSubscriber();
         }
 
         public IRobotState State { get; private set; }
@@ -45,6 +48,24 @@ namespace MrDrone.Core.Classes
             string json = JsonConvert.SerializeObject(msg);
             RosSocket.Publish(Topics.GetPublishId(nameof(CommandActuator)), msg);
             Console.WriteLine($"Publishing to {Topics.GetTopic(nameof(CommandActuator))}: {json}");
+        }
+
+        /// <summary>
+        /// Configures the StateSubscriber of the mobile Robot, which udpates the robots state
+        /// </summary>
+        protected virtual void ConfigureStateSubscriber()
+        {
+
+        }
+
+        protected void DigestOdometryStateMessage(Odometry odom)
+        {
+            this.State.Pose.Update(odom);
+        }
+
+        protected void DigestImuStateMessage(Imu imu)
+        {
+            this.State.Imu = imu;
         }
     }
 }

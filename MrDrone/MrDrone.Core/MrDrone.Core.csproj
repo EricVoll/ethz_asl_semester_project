@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Basics\Pose\IPose.cs" />
     <Compile Include="Basics\Pose\Pose6D.cs" />
+    <Compile Include="Basics\Pose\PoseExtensions.cs" />
     <Compile Include="Classes\Drone.cs" />
     <Compile Include="Classes\MobileRobot.cs" />
     <Compile Include="Classes\RobotState.cs" />

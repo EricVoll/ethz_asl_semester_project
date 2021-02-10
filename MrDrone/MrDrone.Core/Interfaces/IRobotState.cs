@@ -1,4 +1,5 @@
 ﻿using MrDrone.Core.Basics;
+using RosSharp.RosBridgeClient.MessageTypes.Sensor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace MrDrone.Core.Interfaces
     public interface IRobotState
     {
         IPose Pose { get; set; }
+        Imu Imu { get; set; }
         float BatteryLevel { get; set; }
         IPose CurrentTarget { get; set; }
     }
