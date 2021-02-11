@@ -1,4 +1,5 @@
-﻿using MrDrone.Core.Classes;
+﻿using MrDrone.Core.Basics;
+using MrDrone.Core.Classes;
 using MrDrone.Core.Ros;
 using RosSharp.RosBridgeClient;
 using System;
@@ -88,7 +89,12 @@ namespace MrDrone.Console
 
                 }
                 Drone.CommandActuator(efforts);
-            }
+            },
+            ["trajectory"] = (parts) =>
+            {
+                IPose targetPose = new Pose6D(parts.Select(x => double.Parse(x)).ToArray());
+                Drone.CommandTrajectory(targetPose);
+            } 
         };
     }
 }
