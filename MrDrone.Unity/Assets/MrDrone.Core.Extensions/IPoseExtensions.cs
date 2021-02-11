@@ -36,4 +36,27 @@ public static class IPoseExtensions
 
         return (pos, rotation);
     }
+
+    public static IPose Unity2IPose<T>(Vector3 pos, Quaternion orientation, bool unity2ros) where T : IPose, new()
+    {
+        T pose = new T();
+        if(unity2ros)
+        {
+            pos = TransformExtensions.Unity2Ros(pos);
+            orientation = TransformExtensions.Unity2Ros(orientation);
+        }
+
+        pose.X = pos.x;
+        pose.Y = pos.y;
+        pose.Z = pos.z;
+        pose.i = orientation.x;
+        pose.j = orientation.y;
+        pose.k = orientation.z;
+        pose.w = orientation.w;
+        return pose;
+    }
+    public static IPose ToIPose<T>(this Transform t, bool unity2ros = true)where T : IPose, new()
+    {
+        return Unity2IPose<T>(t.position, t.rotation, unity2ros);
+    }
 }

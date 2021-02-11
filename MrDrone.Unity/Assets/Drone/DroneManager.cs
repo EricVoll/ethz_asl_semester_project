@@ -1,4 +1,5 @@
-﻿using MrDrone.Core.Classes;
+﻿using MrDrone.Core.Basics;
+using MrDrone.Core.Classes;
 using RosSharp;
 using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.MessageTypes.Sensor;
@@ -35,6 +36,8 @@ public class DroneManager : MonoBehaviour
             () => { if(Drone.State.JointStateHasChanged) UpdateJointState(); },
             //Updtaes the drone's IMU indicator
             () => { if(Drone.State.ImuHasChanged) UpdateImu(); },
+            //Sends the drone to the target object
+            () => { if(UseTrajectoryTarget) UpdateTrajectoryTarget(); }
         };
     }
 
@@ -52,6 +55,20 @@ public class DroneManager : MonoBehaviour
         foreach (var updater in StateUpdaters)
             updater();
     }
+
+    #region Drone Target Trajectory
+
+    public GameObject TrajectoryTarget;
+    public bool UseTrajectoryTarget = false;
+
+    private void UpdateTrajectoryTarget()
+    {
+        if (!UseTrajectoryTarget) return;
+
+        Drone.CommandTrajectory(TrajectoryTarget.transform.ToIPose<Pose6D>());
+    }
+
+    #endregion
 
     #region IMU
 
