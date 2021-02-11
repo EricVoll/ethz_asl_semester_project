@@ -14,6 +14,17 @@ namespace MrDrone.Core.Basics
             w = 1;
         }
 
+        public Pose6D(double[] values)
+        {
+            X = values[0];
+            Y = values[1];
+            Z = values[2];
+            i = values[3];
+            j = values[4];
+            k = values[5];
+            w = values[6];
+        }
+
         public double X { get; set; }
         public double Y { get; set; }
         public double Z { get; set; }

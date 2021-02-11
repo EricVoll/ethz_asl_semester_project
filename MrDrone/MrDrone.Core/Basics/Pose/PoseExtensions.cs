@@ -1,4 +1,5 @@
-﻿using RosSharp.RosBridgeClient.MessageTypes.Nav;
+﻿using RosSharp.RosBridgeClient.MessageTypes.Geometry;
+using RosSharp.RosBridgeClient.MessageTypes.Nav;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,25 @@ namespace MrDrone.Core.Basics
             pose.j = odom.pose.pose.orientation.y;
             pose.k = odom.pose.pose.orientation.z;
             pose.w = odom.pose.pose.orientation.w;
+        }
+
+        public static Transform ToTransform(this IPose pose)
+        {
+            Transform t = new Transform();
+            t.translation = new Vector3()
+            {
+                x = pose.X,
+                y = pose.Y,
+                z = pose.Z,
+            };
+            t.rotation = new Quaternion()
+            {
+                x = pose.i,
+                y = pose.j,
+                z = pose.k,
+                w = pose.w
+            };
+            return t;
         }
     }
 }

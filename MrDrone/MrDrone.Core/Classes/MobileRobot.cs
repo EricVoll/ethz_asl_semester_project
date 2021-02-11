@@ -5,6 +5,7 @@ using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.MessageTypes.Mav;
 using RosSharp.RosBridgeClient.MessageTypes.Nav;
 using RosSharp.RosBridgeClient.MessageTypes.Sensor;
+using RosSharp.RosBridgeClient.MessageTypes.Trajectory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,6 +49,27 @@ namespace MrDrone.Core.Classes
             string json = JsonConvert.SerializeObject(msg);
             RosSocket.Publish(Topics.GetPublishId(nameof(CommandActuator)), msg);
             Console.WriteLine($"Publishing to {Topics.GetTopic(nameof(CommandActuator))}: {json}");
+        }
+
+        public virtual void CommandTrajectory(RosSharp.RosBridgeClient.MessageTypes.Trajectory.MultiDOFJointTrajectory trajectory)
+        {
+            RosSocket.Publish(Topics.GetPublishId(nameof(CommandTrajectory)), trajectory);
+        }
+        public virtual void CommandTrajectory(IPose targetPose)
+        {
+            MultiDOFJointTrajectory msg = new MultiDOFJointTrajectory();
+            msg.joint_names = new[] { "base_link" };
+            msg.points = new[]
+            {
+                new MultiDOFJointTrajectoryPoint()
+                {
+                    transforms = new[]
+                    {
+                        targetPose.ToTransform()
+                    }
+                }
+            };
+            CommandTrajectory(msg);
         }
 
         /// <summary>

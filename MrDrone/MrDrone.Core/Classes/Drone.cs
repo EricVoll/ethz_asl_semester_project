@@ -4,6 +4,7 @@ using RosSharp.RosBridgeClient;
 using RosSharp.RosBridgeClient.MessageTypes.Mav;
 using RosSharp.RosBridgeClient.MessageTypes.Nav;
 using RosSharp.RosBridgeClient.MessageTypes.Sensor;
+using RosSharp.RosBridgeClient.MessageTypes.Trajectory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace MrDrone.Core.Classes
             base.RegisterMainTopics();
 
             Topics.AddPublisher<Actuators>(nameof(CommandActuator), "command/motor_speed", RosSocket);
+            Topics.AddPublisher<MultiDOFJointTrajectory>(nameof(CommandTrajectory), "command/trajectory", RosSocket);
         }
 
         protected override void ConfigureStateSubscriber()
