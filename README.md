@@ -17,6 +17,7 @@ My Semester Project at the ETHZ ASL institute
 # Depenencies:
 - https://github.com/ethz-asl/rotors_simulator
 - https://github.com/EricVoll/ros-sharp
+- https://github.com/ethz-asl/rovio
 
 # Importing the drone-model into Unity:
 Three things have to be done before you can import the robot model:
