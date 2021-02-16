@@ -16,7 +16,15 @@ public class DroneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RosConnector.RosSocket.protocol.OnConnected += Protocol_OnConnected;
+        if (RosConnector.IsConnected.WaitOne(0))
+        {
+            Protocol_OnConnected(this, EventArgs.Empty);
+        }
+        else
+        {
+            RosConnector.RosSocket.protocol.OnConnected += Protocol_OnConnected;
+        }
+
     }
 
     private void Protocol_OnConnected(object sender, System.EventArgs e)

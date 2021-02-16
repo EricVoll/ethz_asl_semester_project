@@ -25,6 +25,7 @@ namespace RosSharp.RosBridgeClient
     public class RosConnector : MonoBehaviour
     {
         public int SecondsTimeout = 10;
+        public bool IsConnectedToHost = false;
 
         public RosSocket RosSocket { get; private set; }
         public RosSocket.SerializerEnum Serializer;

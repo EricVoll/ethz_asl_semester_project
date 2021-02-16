@@ -4620,9 +4620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondsTimeout: 10
+  IsConnectedToHost: 0
   Serializer: 1
   protocol: 0
-  RosBridgeServerUrl: ws://localhost:9090
+  RosBridgeServerUrl: ws://192.168.1.18:9090
 --- !u!4 &1684795455
 Transform:
   m_ObjectHideFlags: 0

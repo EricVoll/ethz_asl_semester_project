@@ -27,7 +27,7 @@ namespace MrDrone.Core.Classes
 
         protected override void RegisterMainTopics()
         {
-            Topics = new TopicHandler("firefly");
+            Topics = new TopicHandler(robotNamespace: "firefly");
 
             base.RegisterMainTopics();
 
