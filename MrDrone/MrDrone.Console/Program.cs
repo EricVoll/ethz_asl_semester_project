@@ -22,7 +22,7 @@ namespace MrDrone.Console
             bool isConnected = false;
             new Thread(() =>
             {
-                string host = "ws://localhost:9090";
+                string host = "ws://192.168.1.18:9090";
                 System.Console.WriteLine("Connecting to host: " + host);
 
                 RosSocket = RosSocketFactory.GetStandardRosSocket(host,

@@ -27,7 +27,7 @@ namespace MrDrone.Core.Classes
 
         protected override void RegisterMainTopics()
         {
-            Topics = new TopicHandler(robotNamespace: "firefly");
+            Topics = new TopicHandler(robotNamespace: "");
 
             base.RegisterMainTopics();
 
@@ -39,7 +39,7 @@ namespace MrDrone.Core.Classes
         {
             base.ConfigureStateSubscriber();
 
-            Topics.AddSubscriber<Odometry>(nameof(DigestOdometryStateMessage), "ground_truth/odometry", RosSocket, DigestOdometryStateMessage);
+            Topics.AddSubscriber<Odometry>(nameof(DigestOdometryStateMessage), "rovio/odometry", RosSocket, DigestOdometryStateMessage);
             Topics.AddSubscriber<Imu>(nameof(DigestImuStateMessage), "imu", RosSocket, DigestImuStateMessage);
             Topics.AddSubscriber<JointState>(nameof(DigestJointStateMessage), "joint_states", RosSocket, DigestJointStateMessage);
         }
