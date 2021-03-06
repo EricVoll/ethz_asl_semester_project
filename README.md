@@ -29,6 +29,8 @@ My Semester Project at the ETHZ ASL institute
  ```
  If you run into weird errors while building, try a clean build by deleting the `catkin_ws/build` folder.
  
+ If you want to run the sensorPod setup or the real drone, you will have to install versavis, rosserial, flircameradriver.
+ 
  
 # Depenencies:
 - https://github.com/ethz-asl/rotors_simulator
