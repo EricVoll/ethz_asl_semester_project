@@ -57,35 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizerSpheres.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\ImageSubscriber.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JointStateSubscriber.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointFloating.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Extensions\HeaderExtensions.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointContinuous.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizer.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\Math\Matrix3x3.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\Timing\Timer.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JoyPublisher.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanSubscriber.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfOrigin.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStateReader.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyAxisInputPasser.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointPlanar.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugin.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanWriter.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStatePatcher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyButtonReader.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfCollisions.cs" />
-    <Compile Include="Assets\AzureSpatialAnchors\ASAAnchorListener.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJoint.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointPrismatic.cs" />
     <Compile Include="Assets\MeshController\MeshGenerator.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointFixed.cs" />
     <Compile Include="Assets\Utilities\UIThreadHandler.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisual.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\JointLimitsManagers\HingeJointLimitsManager.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionSever.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\TwistPublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JointStatePublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\TwistSubscriber.cs" />
@@ -93,35 +78,51 @@
     <Compile Include="Assets\Drone\DroneManager.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JoySubscriber.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnitySubscriber.cs" />
-    <Compile Include="Assets\RosSharp.Extensions\RosSharpExtensions.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\ImagePublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyAxisJointMotorWriter.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStateWriter.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\PoseStampedPublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfLink.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointRevolute.cs" />
     <Compile Include="Assets\MrDrone.Core.Extensions\IPoseExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyButtonWriter.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfCollision.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfRobot.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizerLines.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugins.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyAxisReader.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisuals.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanPublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\JointLimitsManagers\PrismaticJointLimitsManager.cs" />
-    <Compile Include="Assets\AzureSpatialAnchors\FoundAnchor.RosMsg.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityPublisher.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityServiceProvider.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyAxisJointTransformWriter.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\OdometrySubscriber.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfInertial.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JoyAxisWriter.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\PoseStampedSubscriber.cs" />
-    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionClient.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\ImageSubscriber.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JointStateSubscriber.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointFloating.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointContinuous.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizer.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\Math\Matrix3x3.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JoyPublisher.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanSubscriber.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugin.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanWriter.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfCollisions.cs" />
+    <Compile Include="Assets\AzureSpatialAnchors\ASAAnchorListener.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJoint.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\JointLimitsManagers\HingeJointLimitsManager.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionSever.cs" />
+    <Compile Include="Assets\RosSharp.Extensions\RosSharpExtensions.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\ImagePublisher.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStateWriter.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointRevolute.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugins.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanPublisher.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityPublisher.cs" />
+    <Compile Include="Assets\AzureSpatialAnchors\FoundAnchor.RosMsg.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfInertial.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\RosConnector.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionClient.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\GetParamServiceProvider.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanReader.cs" />
+    <Compile Include="Assets\MeshController\MeshInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -423,14 +424,14 @@
     <Reference Include="System.ValueTuple">
       <HintPath>Assets\RosSharp\Plugins\System.ValueTuple.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System.Text.Json">
       <HintPath>Assets\RosSharp\Plugins\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>Assets\RosSharp\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.4f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -777,134 +778,20 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.4f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.StandardAssets.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.StandardAssets.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSystem.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.LeapMotion.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Gltf.Importers">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Gltf.Importers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenVR">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Editor">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Async">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Async.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Tools">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Examples">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Examples.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.StandardAssets.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.StandardAssets.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.TeleportSystem">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenXR">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.OpenXR.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.Tracking">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.Tracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.SDK">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputAnimation">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.Interactive">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.Interactive.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.Inspectors">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.Inspectors.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Gltf">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Gltf.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Tools.Runtime">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Tools.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.HandPhysics">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.HandPhysics.dll</HintPath>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.Tracking.Editor">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.Tracking.Editor.dll</HintPath>
@@ -912,44 +799,158 @@
     <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.SceneSystem">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.CameraSystem">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Interactive">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Interactive.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.dll</HintPath>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.UnityAR.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Gltf">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Gltf.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputAnimation">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.TeleportSystem">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.HandPhysics">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.HandPhysics.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.PlaneFinding">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.PlaneFinding.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSimulation.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ClassExtensions">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenXR">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Tools.Runtime">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Tools.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.SceneSystem">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.Handtracking.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.SceneTransitionService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.Interactive">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.Interactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.LeapMotion.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Editor.Utilities">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.Utilities.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.MixedReality.Toolkit.Services.CameraSystem">
-      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll</HintPath>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Editor">
       <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Extensions.Tracking">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Extensions.Tracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ClassExtensions">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.UnityAR.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.UnityAR.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Async">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.Inspectors">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.Inspectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Interactive">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Interactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.LeapMotion">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.LeapMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Gltf.Importers">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Gltf.Importers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.OpenVR">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.Experimental.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.SDK">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Examples">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Tools">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus">
+      <HintPath>Library\ScriptAssemblies\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

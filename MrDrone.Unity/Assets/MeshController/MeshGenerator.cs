@@ -2,6 +2,7 @@
 using RosSharp.RosBridgeClient.MessageTypes.Cgal;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter))]
@@ -18,7 +19,9 @@ public class MeshGenerator : MonoBehaviour
             vertices[i] = _mesh.mesh.vertices[i].ToUnity();
         }
 
+        // Unity takes the triangle indices as one array. Unravel it.
         triangles = new int[_mesh.mesh.triangles.Length * 3];
+
         for (int i = 0; i < _mesh.mesh.triangles.Length; i++)
         {
             triangles[3 * i + 0] = (int)_mesh.mesh.triangles[i].vertex_indices[2];
@@ -33,11 +36,15 @@ public class MeshGenerator : MonoBehaviour
     {
         mesh = new UnityEngine.Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
+
+        // The mesh collider has to be deactivated, wait for a few frames and then activated. Otherwise it won't work.
+        GetComponent<MeshCollider>().sharedMesh = mesh;
+        GetComponent<MeshCollider>().enabled = false;
         ui_thread = new UIThreadHandler();
     }
-
+    float time;
     public void Update()
-    {
+    {        
         ui_thread.ReportUpdate();
     }
 
@@ -48,20 +55,10 @@ public class MeshGenerator : MonoBehaviour
 
     private void UpdateMesh()
     {
-        //vertices = new Vector3[]
-        //{
-        //    new Vector3(0,0,0),
-        //    new Vector3(0,0,1),
-        //    new Vector3(0,1,0),
-        //};
-        //triangles = new int[]
-        //{
-        //    0,1,2
-        //};
         mesh.Clear();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
+        ui_thread.ExecuteOnMainThreadAfter(() => { GetComponent<MeshCollider>().enabled = true; }, 1f, this);
     }
-
 }

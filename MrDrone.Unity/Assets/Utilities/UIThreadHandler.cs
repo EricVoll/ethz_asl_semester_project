@@ -30,4 +30,15 @@ public class UIThreadHandler
     {
         actionsToExecuteOnMainThread.Insert(0, action);
     }
+
+    public void ExecuteOnMainThreadAfter(Action action, float seconds, MonoBehaviour go)
+    {
+        go.StartCoroutine(ExecuteAfter(action, seconds));
+    }
+
+    IEnumerator ExecuteAfter(Action action, float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        ExecuteOnMainThread(action);
+    }
 }
