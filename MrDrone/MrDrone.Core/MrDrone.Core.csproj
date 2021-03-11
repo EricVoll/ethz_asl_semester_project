@@ -55,6 +55,7 @@
     <Compile Include="Classes\MobileRobot.cs" />
     <Compile Include="Classes\RobotState.cs" />
     <Compile Include="Classes\TopicHandler.cs" />
+    <Compile Include="Interfaces\IController.cs" />
     <Compile Include="Interfaces\IMobileRobot.cs" />
     <Compile Include="Interfaces\IRobotState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

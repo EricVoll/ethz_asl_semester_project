@@ -1,6 +1,8 @@
-﻿using MrDrone.Core.Basics;
+﻿using MrDrone.Control;
+using MrDrone.Core.Basics;
 using MrDrone.Core.Classes;
 using MrDrone.Core.Ros;
+using Newtonsoft.Json;
 using RosSharp.RosBridgeClient;
 using System;
 using System.Collections.Generic;
@@ -22,7 +24,7 @@ namespace MrDrone.Console
             bool isConnected = false;
             new Thread(() =>
             {
-                string host = "ws://192.168.1.18:9090";
+                string host = "ws://192.168.1.23:9090";
                 System.Console.WriteLine("Connecting to host: " + host);
 
                 RosSocket = RosSocketFactory.GetStandardRosSocket(host,
@@ -47,6 +49,11 @@ namespace MrDrone.Console
         private static void Cycle()
         {
             Drone = new Drone(() => RosSocket);
+            Controller controller = new Controller();
+            controller.Config(RosSocket, Drone);
+            controller.MeshHelper.SubscribeToMeshReceivedEvent((o, e) => {
+                System.Console.WriteLine(JsonConvert.SerializeObject(controller.MeshHelper.Mesh));
+            });
 
             string command = "help";
 

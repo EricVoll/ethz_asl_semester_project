@@ -1,4 +1,5 @@
-﻿using MrDrone.Core.Basics;
+﻿using MrDrone.Control;
+using MrDrone.Core.Basics;
 using MrDrone.Core.Classes;
 using RosSharp;
 using RosSharp.RosBridgeClient;
@@ -12,6 +13,7 @@ using UnityEngine;
 public class DroneManager : MonoBehaviour
 {
     public RosConnector RosConnector;
+    public MeshGenerator MeshGenerator;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,11 @@ public class DroneManager : MonoBehaviour
     {
         Drone = new Drone(() => socket);
 
+        // Initialize the mesh generator
+        Controller = new Controller();
+        Controller.Config(socket, Drone);
+        Controller.MeshHelper.SubscribeToMeshReceivedEvent((o, e) => { MeshGenerator.ReportNewMesh(Controller.MeshHelper.Mesh); });
+
         StateUpdaters = new List<Action>()
         {
             //Updates the drone's pose
@@ -50,6 +57,7 @@ public class DroneManager : MonoBehaviour
     }
 
     Drone Drone;
+    Controller Controller;
 
     List<Action> StateUpdaters;
 

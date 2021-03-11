@@ -67,6 +67,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MrDrone.Control\MrDrone.Control.csproj">
+      <Project>{06d5771f-154a-4eba-9dc7-f52b8b4ddc8e}</Project>
+      <Name>MrDrone.Control</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MrDrone.Core\MrDrone.Core.csproj">
       <Project>{331546ac-f041-4a86-84e2-0a345d674bbd}</Project>
       <Name>MrDrone.Core</Name>
