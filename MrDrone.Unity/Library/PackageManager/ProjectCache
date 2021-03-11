@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637510629279171462
-    m_Hash: 1019725360
+      ticks: 637510686036504698
+    m_Hash: 1726881003
   m_LockFileStatus:
     m_FilePath: C:/Users/Eric Vollenweider/Documents/ETH/SemesterThesis/ethz_asl_semester_project/MrDrone.Unity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637510667372324589
-    m_Hash: 3829494466
+      ticks: 637510686151628329
+    m_Hash: 1178323978
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -2464,6 +2464,403 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
+    - packageId: com.microsoft.mixedreality.toolkit.examples@file:C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.examples-2.6.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 2.6.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.examples@c7ea2c0970df-1615471765404
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.examples
+      name: com.microsoft.mixedreality.toolkit.examples
+      displayName: Mixed Reality Toolkit Examples
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Example scenes and assets for the Microsoft Mixed Reality Toolkit.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      - name: com.microsoft.mixedreality.toolkit.extensions
+        version: 2.6.0
+      resolvedDependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      - name: com.microsoft.mixedreality.toolkit.standardassets
+        version: 2.6.0
+      - name: com.unity.textmeshpro
+        version: 3.0.1
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.microsoft.mixedreality.toolkit.extensions
+        version: 2.6.0
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - augmented
+      - virtual
+      - xr
+      - hololens
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+        revision: 
+        path: 
+    - packageId: com.microsoft.mixedreality.toolkit.extensions@file:C:\Users\Eric
+        Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.extensions-2.6.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 2.6.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.extensions@c47c738d81cf-1615471733768
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.extensions
+      name: com.microsoft.mixedreality.toolkit.extensions
+      displayName: Mixed Reality Toolkit Extensions
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Extensions to the Microsoft Mixed Reality Toolkit. This package
+        includes: Hand Physics Service, Lost Tracking Service and Scene Transition
+        Service.'
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      resolvedDependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      - name: com.microsoft.mixedreality.toolkit.standardassets
+        version: 2.6.0
+      - name: com.unity.textmeshpro
+        version: 3.0.1
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - augmented
+      - virtual
+      - hololens
+      - xr
+      - extensions
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+        revision: 
+        path: 
+    - packageId: com.microsoft.mixedreality.toolkit.foundation@file:C:\Users\Eric
+        Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.foundation-2.6.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 2.6.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.foundation@2b48da581b02-1615471734999
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.foundation
+      name: com.microsoft.mixedreality.toolkit.foundation
+      displayName: Mixed Reality Toolkit Foundation
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The Mixed Reality Toolkit a set of foundational components and
+        features to accelerate mixed reality app development in Unity.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.microsoft.mixedreality.toolkit.standardassets
+        version: 2.6.0
+      resolvedDependencies:
+      - name: com.microsoft.mixedreality.toolkit.standardassets
+        version: 2.6.0
+      - name: com.unity.textmeshpro
+        version: 3.0.1
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - augmented
+      - virtual
+      - xr
+      - hololens
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+        revision: 
+        path: 
+    - packageId: com.microsoft.mixedreality.toolkit.planefinding@file:C:\Users\Eric
+        Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.planefinding@b4dd89002836-1615471733896
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.planefinding
+      name: com.microsoft.mixedreality.toolkit.planefinding
+      displayName: Mixed Reality Toolkit Plane Finding
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Provides utilities to calculate planes based on a mesh.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - xr
+      - hololens
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit.git
+        revision: 
+        path: 
+    - packageId: com.microsoft.mixedreality.toolkit.standardassets@file:C:\Users\Eric
+        Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.standardassets-2.6.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 2.6.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.standardassets@ed70b813d330-1615471735821
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.standardassets
+      name: com.microsoft.mixedreality.toolkit.standardassets
+      displayName: Mixed Reality Toolkit Standard Assets
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Mixed Reality Toolkit standard assets, including; shaders, common
+        materials and fonts.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.unity.textmeshpro
+        version: 2.1.4
+      resolvedDependencies:
+      - name: com.unity.textmeshpro
+        version: 3.0.1
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - augmented
+      - virtual
+      - xr
+      - hololens
+      - assets
+      - standardassets
+      - coreassets
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+        revision: 
+        path: 
+    - packageId: com.microsoft.mixedreality.toolkit.tools@file:C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.tools-2.6.0.tgz
+      testable: 0
+      isDirectDependency: 1
+      version: 2.6.0
+      source: 6
+      resolvedPath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Library\PackageCache\com.microsoft.mixedreality.toolkit.tools@10d4d7c54220-1615471734249
+      assetPath: Packages/com.microsoft.mixedreality.toolkit.tools
+      name: com.microsoft.mixedreality.toolkit.tools
+      displayName: Mixed Reality Toolkit Tools
+      author:
+        name: Microsoft
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Tools for the Microsoft Mixed Reality Toolkit
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      resolvedDependencies:
+      - name: com.microsoft.mixedreality.toolkit.foundation
+        version: 2.6.0
+      - name: com.microsoft.mixedreality.toolkit.standardassets
+        version: 2.6.0
+      - name: com.unity.textmeshpro
+        version: 3.0.1
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - mrtk
+      - microsoft
+      - mixed
+      - reality
+      - augmented
+      - virtual
+      - xr
+      - hololens
+      - tools
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/microsoft/MixedRealityToolkit-Unity.git
+        revision: 
+        path: 
     - packageId: com.unity.modules.subsystems@1.0.0
       testable: 0
       isDirectDependency: 0
@@ -2637,6 +3034,90 @@ m_PackageAssets:
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
   m_LocalPackages:
-    m_LocalFileStatus: []
+    m_LocalFileStatus:
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.examples-2.6.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.examples-2.6.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685654040315
+      m_Hash: 2014296066
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.extensions-2.6.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.extensions-2.6.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685337680436
+      m_Hash: 3172118034
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.foundation-2.6.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.foundation-2.6.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685349990475
+      m_Hash: 3582901798
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.planefinding-1.0.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685338960446
+      m_Hash: 2612967325
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.standardassets-2.6.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.standardassets-2.6.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685358210440
+      m_Hash: 1075210711
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.tools-2.6.0.tgz/package.json
+      m_PathExists: 0
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 0
+      m_Hash: 0
+    - m_FilePath: C:\Users\Eric Vollenweider\Documents\ETH\SemesterThesis\ethz_asl_semester_project\MrDrone.Unity\Packages\MixedReality\com.microsoft.mixedreality.toolkit.tools-2.6.0.tgz
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637510685342490447
+      m_Hash: 958761605
 m_ProjectPath: C:/Users/Eric Vollenweider/Documents/ETH/SemesterThesis/ethz_asl_semester_project/MrDrone.Unity/Packages
 m_EditorVersion: 2020.2.4f1 (becced5a802b)
