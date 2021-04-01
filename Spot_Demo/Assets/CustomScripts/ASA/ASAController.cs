@@ -53,11 +53,7 @@ public class ASAController : MonoBehaviour
     /// <param name="showUser">If true, the message will be logged and shown to the user</param>
     private void Log(string msg, bool showUser = false)
     {
-        StringPublisher.PublishDebug(msg);
-        if (showUser)
-        {
-            Debug.Log(msg);
-        }
+       Debug.Log(msg);
     }
 
     public void Awake()

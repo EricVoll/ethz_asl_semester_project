@@ -196,9 +196,14 @@ public class AzureConfig
 
     public void ReadFromPlayerPrefs()
     {
-        AccountId = PlayerPrefs.GetString("asa_account_id");
-        AccountKey = PlayerPrefs.GetString("asa_account_key");
-        AccountDomain = PlayerPrefs.GetString("asa_account_domain");
+        AccountId = "e75b5007-08eb-4c15-b3b3-4199c6573638";
+        AccountKey = "ZSNco1id6VVgFjj7EK4GLd+BIrpZuxaYxrmjmM0z4dw=";
+        AccountDomain = "westeurope.mixedreality.azure.com";
+        return;
+
+        // AccountId = PlayerPrefs.GetString("asa_account_id");
+        // AccountKey = PlayerPrefs.GetString("asa_account_key");
+        // AccountDomain = PlayerPrefs.GetString("asa_account_domain");
     }
 
 
