@@ -53,7 +53,8 @@ public class ASAController : MonoBehaviour
     /// <param name="showUser">If true, the message will be logged and shown to the user</param>
     private void Log(string msg, bool showUser = false)
     {
-       Debug.Log(msg);
+        if (showUser)
+            Debug.Log(msg);
     }
 
     public void Awake()
@@ -473,6 +474,44 @@ public class ASAController : MonoBehaviour
     #endregion
 
     #region External Calls
+
+    public async void FindAnchorSelf()
+    {
+        string anchors = PlayerPrefs.GetString("anchors");
+
+        if(String.IsNullOrEmpty(anchors))
+        {
+            Debug.Log("No anchors saved.");
+            return;
+        }
+
+
+        var parts = anchors.Split(new string[] { "---" }, StringSplitOptions.None);
+
+        if(parts.Length == 0)
+        {
+            Debug.Log("Split not succeessful");
+            return;
+        }
+
+        var lastanchor = parts.Last();
+        Debug.Log("Finding anchor with ID " + lastanchor);
+        FindAnchor(this.gameObject, lastanchor);
+    }
+
+    public async void CreateAnchorSelf()
+    {
+        Debug.Log("Starting to create anchor");
+        string anchorId = await CreateAnchor(this.gameObject);
+
+        Debug.Log("created anchor");
+        Debug.Log(anchorId);
+
+        string anchors = PlayerPrefs.GetString("anchors");
+        anchors += "---" + anchorId;
+        PlayerPrefs.SetString("anchors", anchors);
+        PlayerPrefs.Save();
+    }
 
     /// <summary>
     /// Creates an anchor at the PoseIndicator's transform and saves the id persistently if everything worked.
