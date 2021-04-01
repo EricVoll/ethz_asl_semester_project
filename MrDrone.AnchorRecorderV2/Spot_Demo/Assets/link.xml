@@ -1,0 +1,15 @@
+<linker>
+    <assembly fullname="RosSharp" preserve="all"/>
+    <assembly fullname="RosBridgeClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="RosBridgeClientUWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="WaypointControl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="RobotUtilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="SpotSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="AzureCosmosDBClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all"/>
+    <assembly fullname="System">
+        <type fullname="System.ComponentModel.ReferenceConverter">
+                <method signature="System.Void .ctor(System.Type)" />
+        </type>
+        <type fullname="System.Web.HttpUtility" preserver="all" />
+    </assembly>
+</linker>
