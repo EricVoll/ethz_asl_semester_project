@@ -31,8 +31,8 @@ namespace MrDrone.Core.Classes
 
             base.RegisterMainTopics();
 
-            Topics.AddPublisher<Actuators>(nameof(CommandActuator), "command/motor_speed", RosSocket);
-            Topics.AddPublisher<MultiDOFJointTrajectory>(nameof(CommandTrajectory), "command/trajectory", RosSocket);
+            // Topics.AddPublisher<Actuators>(nameof(CommandActuator), "command/motor_speed", RosSocket);
+            // Topics.AddPublisher<MultiDOFJointTrajectory>(nameof(CommandTrajectory), "command/trajectory", RosSocket);
         }
 
         protected override void ConfigureStateSubscriber()
@@ -40,7 +40,7 @@ namespace MrDrone.Core.Classes
             base.ConfigureStateSubscriber();
 
             Topics.AddSubscriber<Odometry>(nameof(DigestOdometryStateMessage), "rovio/odometry", RosSocket, DigestOdometryStateMessage);
-            Topics.AddSubscriber<Imu>(nameof(DigestImuStateMessage), "imu", RosSocket, DigestImuStateMessage);
+            Topics.AddSubscriber<Imu>(nameof(DigestImuStateMessage), "versavis/imu", RosSocket, DigestImuStateMessage);
             Topics.AddSubscriber<JointState>(nameof(DigestJointStateMessage), "joint_states", RosSocket, DigestJointStateMessage);
         }
 

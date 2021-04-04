@@ -127,8 +127,8 @@ public class DroneManager : MonoBehaviour
     private void UpdateOdometry()
     {
         (var position, var rotation) = Drone.State.Pose.ToUnity();
-        transform.position = position;
-        transform.rotation = rotation;
+        transform.localPosition = position;
+        transform.localRotation = rotation;
         Drone.State.ReportPoseSynched();
     }
     #endregion
