@@ -50,7 +50,7 @@ public class DroneManager : MonoBehaviour
             //Updates the drone's rotors
             () => { if(Drone.State.JointStateHasChanged) UpdateJointState(); },
             //Updtaes the drone's IMU indicator
-            () => { if(Drone.State.ImuHasChanged) UpdateImu(); },
+            () => { /*if(Drone.State.ImuHasChanged) UpdateImu();*/ },
             //Sends the drone to the target object
             () => { if(UseTrajectoryTarget) UpdateTrajectoryTarget(); }
         };
