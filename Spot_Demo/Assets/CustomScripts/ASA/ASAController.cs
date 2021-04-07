@@ -1,5 +1,7 @@
-﻿using Microsoft.Azure.SpatialAnchors;
+﻿using AzureCosmosDBClient;
+using Microsoft.Azure.SpatialAnchors;
 using Microsoft.Azure.SpatialAnchors.Unity;
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Networking;
 
 /// <summary>
 /// The controller used to interact with the ASA library
@@ -484,7 +487,6 @@ public class ASAController : MonoBehaviour
             Debug.Log("No anchors saved.");
             return;
         }
-
 
         var parts = anchors.Split(new string[] { "---" }, StringSplitOptions.None);
 
