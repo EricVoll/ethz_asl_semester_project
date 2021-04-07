@@ -13,6 +13,8 @@ public class DroneManager : MonoBehaviour
     public GameObject Drone;
     public UIThreadHandler UIThreadHandler;
     public MeshGenerator MeshGenerator;
+    private string odomTopic;
+    private bool connected = false;
 
     private void Awake()
     {
@@ -20,13 +22,33 @@ public class DroneManager : MonoBehaviour
         UIThreadHandler = new UIThreadHandler();
     }
 
+    public void ConnectToRovio()
+    {
+        SetupDrone("/rovio/odometry");
+    }
+    public void ConnectToGroundtruth()
+    {
+        SetupDrone("/fox/vrpn_client/estimated_odometry");
+    }
+
     private void Connector_OnConnectedEvent(object sender, System.EventArgs e)
     {
+        connected = true;
+    }
+
+    private void SetupDrone(string odomTopic)
+    {
+        if (!connected)
+        {
+            Debug.Log("Not connected to rosmaster");
+            return;
+        }
+
         // subscribe
         SubscriptionHandler<Odometry> handler = new SubscriptionHandler<Odometry>((o) => {
             UIThreadHandler.ExecuteOnMainThread(() => { UpdateDroneOdom(o); });
         });
-        Connector.RosSocket.Subscribe<Odometry>("/rovio/odometry", handler);
+        Connector.RosSocket.Subscribe<Odometry>(odomTopic, handler);
 
         SubscriptionHandler<TriangleMeshStamped> meshHandler = new SubscriptionHandler<TriangleMeshStamped>((o) => {
             UIThreadHandler.ExecuteOnMainThread(() => { UpdateMesh(o); });
