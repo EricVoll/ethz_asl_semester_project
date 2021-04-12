@@ -1,41 +1,13 @@
 # ethz_asl_semester_project
-My Semester Project at the ETHZ ASL institute
+My Semester Project at the ETHZ ASL institute. [Video](https://youtu.be/SxmkRreG5j8).
 
+The drone performs Visual Inertial Odometry while using Azure Spatial Anchors to compensate for its drift using anchors created by the HoloLens 2. Simultaneously, the HoloLens 2 receives the drone's pose relative to an anchor and can project holograms on it.
 
-# Setup
-1. Install ROS melodic
-2. Setup catkin workspace using:
- ```
- cd ~ && mkdir -p catkin_ws/src && cd catkin_ws`
- catkin config --init --merge-devel --cmake-args -DCMAKE_BUILD_TYPE=Release`
- catkin config --extend /opt/ros/melodic`
- sudo apt-get install ros-melodic-rosbridge-server`
- cd ~/catkin_ws/src
- git clone https://github.com/EricVoll/azure_spatial_anchors_ros
- sudo apt-get install ros-$ROS_DISTRO-catkin ros-$ROS_DISTRO-tf2-eigen python-catkin-tools libgflags-dev libgoogle-glog-dev python-wstool
- git clone https://github.com/EricVoll/SemesterProjectRos mr-drone
- git clone https://github.com/ethz-asl/rovio 
- cd rovio && git submodule update --init --recursive && cd ..
- git clone -b feature/poseupdate https://github.com/ethz-asl/rovio
- git clone https://github.com/catkin/catkin_simple.git
- git clone https://github.com/ethz-asl/kindr
- git clone https://github.com/ethz-asl/rotors_simulator
- git clone https://github.com/ethz-asl/mav_comm
- sudo apt-get update
- sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
- sudo apt-get install ros-melodic-octomap ros-melodic-octomap-ros python-wstool python-catkin-tools protobuf-compiler libgoogle-glog-dev
- 
- catkin build
- ```
- If you run into weird errors while building, try a clean build by deleting the `catkin_ws/build` folder.
- 
- If you want to run the sensorPod setup or the real drone, you will have to install versavis, rosserial, flircameradriver.
- 
- 
-# Depenencies:
-- https://github.com/ethz-asl/rotors_simulator
-- https://github.com/EricVoll/ros-sharp
-- https://github.com/ethz-asl/rovio (read this [issue](https://github.com/ethz-asl/rovio/issues/183) for installing)
+This handheld sensor pod is a mockup with the same hardware as the real omnidirectional drone has - just no actuators. The drone is supposed to follow the trajectory and clean/measure/touch/exert forces onto the real-world structure's surface while having a much more intuitive interface using MR.
+
+This repo contains the code for the Unity Parts of the system, including everything you can see in the video linked above.
+The GitHub repos for the ROS parts can be found here: github.com/EricVoll/vio_drift_comp_using_ASA
+The ROS repo also contains a details report of the project.
 
 # Importing the drone-model into Unity:
 Three things have to be done before you can import the robot model:
